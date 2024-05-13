@@ -1,0 +1,103 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background: 	#fffdd0;
+}
+
+nav{ 
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+nav ul{
+   margin: 40px 0;
+   
+} 
+nav ul li{
+    display: inline-block;
+    margin: 0px 20px ;
+    padding: 0 30px ;
+}
+nav ul li a {
+    list-style: none;
+    text-decoration: none;
+    font-size: 1.3;
+    font-weight: 300;
+    color: #490206 ;
+}
+.main{
+    margin: 12px 50px;
+    border: 3px solid black;
+    max-height: 600px;
+    width: 90%;
+    /* overflow: hidden; */
+}
+.row{
+    display: flex;
+}
+.col-1{
+    flex-basis: 48%;
+}
+.col-1 h1{
+    font-size: 6.3rem;
+    color: #490206;
+    margin: 12px;
+    position: relative;
+}
+.col-1 p{
+    font-size: 19px;
+    color: #490206;
+    margin: 12px;
+}
+.col-2{
+    flex-basis: 49%;
+}
+.col-2 img{
+    height: 345px;
+    margin: 50px 70px ;
+}
+/* .change-content{
+/* animation: name duration timing-function delay iteration-count direction fill-mode; */
+/* animation: change 1s linear;
+} */ 
+.change_content:after {
+    content: "";
+    animation: changetext 10s infinite linear;
+    color: #490206;
+  }
+@keyframes changetext{
+    0% {
+        content: "Darjeeling";
+      }
+      20% {
+        content: "Agra";
+      }
+      35% {
+        content: "Jaipur";
+      }
+      60% {
+        content: "kerala";
+      }
+      80% {
+        content: "delhi";
+      }
+      100% {
+        content: "Mumbai";
+      }
+    }
+
+.foot{
+    background: #000;
+    color: white;
+    font-size: 19px;
+    margin: 30px 0px;
+    padding: 20px;
+    display: block;
+    align-items: center;
+    top: 20%;
+}
+.foot h2 {
+    text-align: center;
+}
